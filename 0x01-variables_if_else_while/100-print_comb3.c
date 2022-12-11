@@ -6,17 +6,21 @@
  */
 int main(void)
 {
-int num1, num2;
-for (num1 = 0; num1 < 10; num1++)
+int x, y;
+for (x = 48; x < 58; x++)
 {
-for (num2 = 0; num2 < 10; num2++)
+for (y = 49; y < 58; y++)
 {
-putchar((num1 % 10) + '0');
-putchar((num2 % 10) + '0');
-if (num1 == 9 && num2 == 9)
-continue;
-putchar(',');
-putchar(' ');
+if (y > x)
+{
+putchar(x);
+putchar(y);
+if (x < 56 || y < 57)
+{
+putchar(44);
+putchar(32);
+}
+}
 }
 }
 putchar('\n');
