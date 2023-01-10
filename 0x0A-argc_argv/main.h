@@ -1,5 +1,8 @@
-int _putchar(char c);
-int main(argc, char* argv[]);
-int multiply(int a, int b);
-int add(int a, int b);
+#ifndef MAIN_H
 
+#define MAIN_H
+
+int _putchar(char c);
+
+int main(int argc, char *argv[]);
+#endif
